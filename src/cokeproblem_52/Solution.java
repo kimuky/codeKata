@@ -5,7 +5,7 @@ class Solution {
         int answer = 0;
         int emptyBottle;
         int remainBottle;
-
+        // test
         while(true) {
             if (n< a){
                 break;
