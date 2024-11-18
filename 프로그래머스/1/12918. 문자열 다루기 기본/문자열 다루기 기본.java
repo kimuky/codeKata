@@ -1,15 +1,15 @@
 class Solution {
     public boolean solution(String s) {
         boolean answer = false;
-        int sLen = s.length();
-        char[] charArr = s.toCharArray();
-        if (sLen == 4 || sLen == 6) {
-            for (char c : charArr) {
-                if (Character.isAlphabetic(c)) {
-                    return false;
-                }
+        
+        try {
+            Integer.parseInt(s);
+            if (s.length() == 4 || s.length() == 6) {
+            answer = true;
+                
             }
-            return true;
+        } catch(Exception e) {
+            
         }
         
         return answer;
