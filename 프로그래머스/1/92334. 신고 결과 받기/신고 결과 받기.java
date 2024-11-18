@@ -18,8 +18,6 @@ class Solution {
             }    
         }
         
-        System.out.println(Arrays.toString(reportedArr));
-        
         for (String reportString : reportSet) {
             String[] reportTwo = reportString.split(" ");
 
