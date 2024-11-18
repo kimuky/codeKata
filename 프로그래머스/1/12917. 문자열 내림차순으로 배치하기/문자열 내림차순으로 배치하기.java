@@ -1,10 +1,13 @@
 import java.util.*;
+
 class Solution {
     public String solution(String s) {
         String answer = "";
-        String[] temp = s.split("");
-        Arrays.sort(temp, Collections.reverseOrder());
-        answer += answer.join("", temp);
+        String[] sArr = s.split("");
+        
+        Arrays.sort(sArr, Collections.reverseOrder());
+        
+        answer = String.join("", sArr);
         return answer;
     }
 }
